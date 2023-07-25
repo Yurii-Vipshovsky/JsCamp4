@@ -1,0 +1,37 @@
+@import "mixins";
+@import "variables";
+
+header{
+    margin-left:10vw;
+    margin-right:10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button{
+        @include small-rounded-border;
+        background-color: $light-broun-color;
+        color: #FFF;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+
+    a{
+        cursor: pointer;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        padding: 5px;
+        transition: $base-transition-time;
+        &:hover{
+            border: 3px solid $main-green-color;
+            color: $main-green-color;
+        }
+    }
+}
