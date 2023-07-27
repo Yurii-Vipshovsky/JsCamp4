@@ -2,36 +2,51 @@
 @import "variables";
 
 header{
+    position: sticky;
+    top:0;
+    left:0;
+    height: 100px;
+    background-color: #FFF;
+}
+
+.nav-bar{
+    padding-top : 5vh;
     margin-left:10vw;
     margin-right:10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.nav-bar{
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    &__buttons-container{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
 
-    button{
-        @include small-rounded-border;
-        background-color: $light-broun-color;
-        color: #FFF;
-        padding: 5px 20px;
-        cursor: pointer;
+        button{
+            @include small-rounded-border;
+            background-color: $light-broun-color;
+            color: #FFF;
+            padding: 5px 20px;
+            cursor: pointer;
+        }
     }
 
-    a{
+    &__link{
         cursor: pointer;
-        border-radius: 50%;
         border: 3px solid transparent;
         padding: 5px;
         transition: $base-transition-time;
         &:hover{
-            border: 3px solid $main-green-color;
-            color: $main-green-color;
+            @include small-rounded-bordered-button;
         }
     }
+}
+
+.progress-bar{
+    margin-top: 5px;
+    height: 5px;
+    background-color: $main-green-color;
+    width: 0;
+    transition: width 3*$base-transition-time;
 }

@@ -1,0 +1,29 @@
+@import "mixins";
+@import "variables";
+
+.services-block{
+    &__button{
+        @include small-rounded-bordered-button;
+        background-color: $main-green-color;
+        color: $white-color;
+        width: 200px;
+        height: 45px;
+        cursor: pointer;
+    } 
+}
+
+.selected{
+    background-color: $white-color; 
+    color: $main-green-color;
+    transition: $base-transition-time;
+}
+
+.services-container{
+    display: flex;
+    
+}
+
+.services-element{
+    @include medium-rounded-border;
+    box-shadow: $common-shadow;
+}

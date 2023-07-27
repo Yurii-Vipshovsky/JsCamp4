@@ -5,21 +5,31 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="style/style.css" rel="stylesheet">
+        <link href="style/style.css" rel="stylesheet">        
     </head>
-    <body>
+    <body class="overflow-hidden">
+        <div class="sigma-hello hidden">
+            
+        </div>
+        <div class="loading-animation">
+            
+        </div>
+        <script src="sourses/js/loading-animation.js"></script>
         <header>
-            <img src="images/Logo.png" alt="DECBASE"/>
-            <div class="nav-bar">
-                <a>HOME</a>
-                <a>PROJECT</a>
-                <a>SERVICES</a>
-                <a>ABOUT</a>
-                <a>BLOG</a>
-                <a>SHOP</a>
-                <a>CONTACT</a>
-                <button>Sign Up</button>
+            <div class=nav-bar>
+                <img src="images/Logo.png" alt="DECBASE"/>
+                <div class="nav-bar__buttons-container">
+                    <a class="nav-bar__link" id="home-link">HOME</a>
+                    <a class="nav-bar__link">PROJECT</a>
+                    <a class="nav-bar__link" id="services-link">SERVICES</a>
+                    <a class="nav-bar__link" id="about-link">ABOUT</a>
+                    <a class="nav-bar__link" id="blog-link">BLOG</a>
+                    <a class="nav-bar__link">SHOP</a>
+                    <a class="nav-bar__link" id="contact-link">CONTACT</a>
+                    <button>Sign Up</button>
+                </div>
             </div>
+            <div class="progress-bar"></div>
         </header>
         <div class="Modern-interior-block">
             <div>
@@ -35,5 +45,110 @@
 
             </div>
         </div>
+        <div class="services-block">
+            <div>
+                <h3>WHAT WE DO</h3>
+                <h2>Our Service</h2>
+                <button class="services-block__button">ALL</button>
+                <button class="services-block__button">INTERIOR DESIGN</button>
+                <button class="services-block__button">ARCHITECTURE</button>
+                <button class="services-block__button">PLANNING</button>
+            </div>
+            <div class="services-container">
+                <div class="services-element">
+                    <img class="services-element__picture" src="images/Services/interior-design.png" alt="Interior design"/>
+                    <p class="services-element__name">Test</p>
+                    <p class="services-element__description">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                </div>
+                <div class="services-element">
+                    <img class="services-element__picture" src="images/Services/interior-design.png" alt="Interior design"/>
+                    <p class="services-element__name">Test</p>
+                    <p class="services-element__description">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                </div>
+                <div class="services-element">
+                    <img class="services-element__picture" src="images/Services/interior-design.png" alt="Interior design"/>
+                    <p class="services-element__name">Test</p>
+                    <p class="services-element__description">Lorem ipsum dolor amet consectetur
+                        adipiscing elit sed eiusmod tempor
+                        incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-block">
+            <div>
+                <h3>ABOUT US</h3>
+                <h2>Interioris The Will
+                    of An Epoch Mextreo</h2>
+                <p>There are many variations of passages</p>
+                <button>LEARN MORE</button>
+            </div>
+            <div>
+                <img src="images/Modern Interior/modern-interior-image.png" alt="Modern Interior Image"/>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div class="testimonials-block">
+                <h3>TESTIMONIALS</h3>
+                <h2>Client says about us</h2>
+                <div class="testimonials-block__nav-buttons">
+                    <button id="testimonials-block__prev-button"></button>
+                    <button id="testimonials-block__next-button"></button>
+                </div>
+                <div class="testimonials-block__comments-container">
+                    <div class="testimonials-block__comment">
+
+                    </div>
+                    <div class="testimonials-block__comment">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-block">
+            <div>
+                <h3>LETEST NEWS</h3>
+                <h2>From Our Blog</h2>
+                <p>There are many variations of passages</p>
+                <button>LEARN MORE</button>
+            </div>
+            <div>
+                <img src="images/Modern Interior/modern-interior-image.png" alt="Modern Interior Image"/>
+
+            </div>
+        </div>
+        <div class="subscribe-block">
+            <div>
+                <h2>DON'T FORGET TO SIGN UP</h2>
+                <p>Find out early about all upcoming promotions and new product releases with
+                    our newsletter.</p>
+            </div>
+            <div>
+                <form class="subscribe-form">
+                    <div>
+                        <input class="subscribe-form__small-input" id="firstname" type="text" placeholder="Enter your name....." required/>
+                        <input class="subscribe-form__small-input" id="surname" type="text" placeholder="Enter your surname....." required/>
+                    </div>
+                    <input class="subscribe-form__big-input" id="email" type="email" placeholder="Enter your e-mail....." required/>
+                    <p class="subscribe-form__error-info"></p>
+                    <input class="subscribe-form__submit-input" type="submit" value="SUBSCRIBE"/>
+                </form>                
+            </div>
+        </div>
+        <footer>
+
+        </footer>
     </body>
+    <script src="sourses/js/user-idle.js"></script>
+    <script src="sourses/js/navigation-bar.js"></script>
+    <script src="sourses/js/servises-logic.js"></script>
+    <script src="sourses/js/subscribe-form-validation.js"></script>
 </html>

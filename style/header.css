@@ -1,4 +1,13 @@
 header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color: #FFF;
+}
+
+.nav-bar {
+  padding-top: 5vh;
   margin-left: 10vw;
   margin-right: 10vw;
   display: -webkit-box;
@@ -11,8 +20,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.nav-bar {
+.nav-bar__buttons-container {
   width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +31,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.nav-bar button {
+.nav-bar__buttons-container button {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: none;
@@ -32,15 +40,24 @@ header {
   padding: 5px 20px;
   cursor: pointer;
 }
-.nav-bar a {
+.nav-bar__link {
   cursor: pointer;
-  border-radius: 50%;
   border: 3px solid transparent;
   padding: 5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.nav-bar a:hover {
+.nav-bar__link:hover {
+  border-radius: 20px;
   border: 3px solid #37806B;
   color: #37806B;
+}
+
+.progress-bar {
+  margin-top: 5px;
+  height: 5px;
+  background-color: #37806B;
+  width: 0;
+  -webkit-transition: width 0.9s;
+  transition: width 0.9s;
 }/*# sourceMappingURL=header.css.map */
