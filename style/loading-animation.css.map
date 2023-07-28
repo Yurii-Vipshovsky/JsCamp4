@@ -1,1 +1,1 @@
-{"version":3,"sources":["../sourses/scss/loading-animation.scss","loading-animation.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,OAAA;EACA,MAAA;EACA,QAAA;EACA,SAAA;EACA,gBAAA;EACA,UAAA;ACCJ","file":"loading-animation.css"}
+{"version":3,"sources":["../sourses/scss/loading-animation.scss","../sourses/scss/_mixins.scss","../sourses/scss/_variables.scss","loading-animation.css"],"names":[],"mappings":"AAEA;ECmBI,eAAA;EACA,OAAA;EACA,MAAA;EACA,QAAA;EACA,SAAA;EACA,gBCtBW;EDuBX,UAAA;AEnBJ","file":"loading-animation.css"}

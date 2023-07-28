@@ -17,3 +17,18 @@
     border: 3px solid $main-green-color;
     color: $main-green-color;
 }
+
+@mixin all-window-cover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $white-color;
+    z-index: 1;
+}
+
+@mixin base-block-padding{
+    padding-left: 10vw;
+    margin-top: 15vh;
+}

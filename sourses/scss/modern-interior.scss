@@ -1,0 +1,6 @@
+@import "variables";
+@import "mixins";
+
+.modern-interior-block{
+    @include base-block-padding;
+}

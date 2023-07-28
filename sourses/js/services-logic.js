@@ -48,8 +48,12 @@ function createElement(elemData){
     showCount+=1;
     name.innerHTML = elemData.name;
     description.innerHTML = elemData.description;
-    let imgSrc = "images/Services/"+elemData.type.toLowerCase().split(' ').join('-')+'.png';
+    let imgSrc = "images/Services/"+elemData.type.toLowerCase().split(' ').join('_')+'.png';
     picture.src=imgSrc;
+    picture.alt=elemData.type;
+    if(elemData.type=="Architecture"){
+        element.classList.add("architecture");
+    }
     element.classList.add("visible");
 }
 
@@ -77,8 +81,9 @@ function createServise(serviseName){
 
 function deleteAllElements(){
     const elements = document.querySelectorAll(".services-element");
-    for(let i=showCount-1;i>0;--i){
-        elements[i].classList.remove("visible");;
+    for(let i=0; i<showCount; i++){
+        elements[i].classList.remove("visible");
+        elements[i].classList.remove("architecture");
     }
     showCount=0;
 }

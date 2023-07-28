@@ -2,6 +2,7 @@
 @import "variables";
 
 .services-block{
+    @include base-block-padding;
     &__button{
         @include small-rounded-bordered-button;
         background-color: $main-green-color;
@@ -9,28 +10,79 @@
         width: 200px;
         height: 45px;
         cursor: pointer;
+        margin-right: 75px;
     }
     &__button.selected{
     background-color: $white-color; 
     color: $main-green-color;
     transition: $base-transition-time;
     }
+    background: url("../images/Services/services_decorator.png");
+    background-position: 100% 110%;
+    padding-bottom: 20vh;
+    background-repeat: no-repeat;
+
 }
 
 .services-container{
-    display: flex;
-    
+    display: grid;    
+    margin-top: 8vh;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;    
+}
+
+.services-container .services-element:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.services-container .services-element:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.services-container .services-element:nth-child(3){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.services-container .services-element:nth-child(4){
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.services-container .services-element:nth-child(5){
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
 .services-element{
     @include medium-rounded-border;
     box-shadow: $common-shadow;
     height: 0;
+    width: 400px;
     transition: $base-transition-time;
     display: none;
+    background-color: $white-color;
+    padding: 0 40px 0 20px;
+    &__picture{
+        width: 42px;
+        height: 33px;
+        padding-top: 20px;
+        padding-right: 5px;
+    }
+    &__name{
+        font-size: 1.5em;
+    }
+}
+
+.services-element.architecture{
+    background-color: $light-broun-color;
+    color: $white-color;
 }
 
 .services-element.visible{
     height: 150px;
-    display: block;
+    display: flex;
 }
