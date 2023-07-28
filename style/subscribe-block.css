@@ -1,5 +1,6 @@
 .subscribe-block {
   padding-left: 10vw;
+  padding-right: 5vw;
   margin-top: 15vh;
 }
 
@@ -37,6 +38,7 @@
   border: none;
   background: #37806B;
   color: #FFF;
+  padding: 10px 20px;
 }
 
 .error-input {

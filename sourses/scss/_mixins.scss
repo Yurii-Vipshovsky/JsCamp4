@@ -30,5 +30,13 @@
 
 @mixin base-block-padding{
     padding-left: 10vw;
+    padding-right: 5vw;
     margin-top: 15vh;
+}
+
+@mixin common-button{
+    @include small-rounded-border;
+    background: $main-green-color;
+    color: $white-color;
+    padding: 10px 20px;
 }

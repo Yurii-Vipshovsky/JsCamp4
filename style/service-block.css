@@ -1,5 +1,6 @@
 .services-block {
   padding-left: 10vw;
+  padding-right: 5vw;
   margin-top: 15vh;
   background: url("../images/Services/services_decorator.png");
   background-position: 100% 110%;
@@ -69,7 +70,7 @@
   transition: 0.3s;
   display: none;
   background-color: #FFF;
-  padding: 0 40px 0 20px;
+  padding: 0 40px 10px 20px;
 }
 .services-element__picture {
   width: 42px;

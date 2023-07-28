@@ -21,10 +21,12 @@ servicesButtons.forEach(button => {
 });
 
 function chargeService(event){
-    //if not same
     event.preventDefault();
     const previousButton = document.querySelector(".services-block__button.selected");
     if(previousButton!=null){
+        if(previousButton==event.target){
+            return;
+        }
         previousButton.classList.remove("selected");
     }
     event.target.classList.add("selected");

@@ -2,7 +2,6 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  height: 100px;
   background-color: #FFF;
 }
 
@@ -64,6 +63,7 @@ header {
 
 .services-block {
   padding-left: 10vw;
+  padding-right: 5vw;
   margin-top: 15vh;
   background: url("../images/Services/services_decorator.png");
   background-position: 100% 110%;
@@ -133,7 +133,7 @@ header {
   transition: 0.3s;
   display: none;
   background-color: #FFF;
-  padding: 0 40px 0 20px;
+  padding: 0 40px 10px 20px;
 }
 .services-element__picture {
   width: 42px;
@@ -169,6 +169,7 @@ header {
 
 .subscribe-block {
   padding-left: 10vw;
+  padding-right: 5vw;
   margin-top: 15vh;
 }
 
@@ -206,6 +207,7 @@ header {
   border: none;
   background: #37806B;
   color: #FFF;
+  padding: 10px 20px;
 }
 
 .error-input {
@@ -235,7 +237,32 @@ header {
 
 .modern-interior-block {
   padding-left: 10vw;
+  padding-right: 5vw;
   margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("../images/Modern Interior/modern_inerior_decoration.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+.modern-interior-block__left-text {
+  padding-top: 50px;
+}
+.modern-interior-block__contact-button {
+  margin-top: 50px;
+}
+.modern-interior-block p {
+  color: #646464;
+}
+
+h1 {
+  color: #212121;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -254,4 +281,16 @@ h3 {
 
 h2 {
   color: #212121;
+}
+
+button {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background: #37806B;
+  color: #FFF;
+  padding: 10px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

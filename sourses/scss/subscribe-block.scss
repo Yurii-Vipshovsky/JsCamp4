@@ -21,9 +21,7 @@
         color: $light-grey-color;
     }
     &__submit-input{
-        @include small-rounded-border;
-        background: $main-green-color;
-        color: $white-color;
+        @include common-button;
     }
 }
 
