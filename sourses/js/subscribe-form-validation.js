@@ -30,6 +30,13 @@ function formValidation(event){
         setTimeout(()=>{errorInfo.innerHTML='';}, 5000);
         return;
     }
+    if (localStorage) {
+        localStorage.setItem('firstname', firstname.value);        
+        localStorage.setItem('surname', surname.value);        
+        localStorage.setItem('email', email.value);
+    } else {
+        document.cookie = `firstname=${firstname.value}; surname=${surname.value}; email=${email.value}`;
+    }
     if(firstname.value=="Sigma"){
         const sigmaHello = document.querySelector(".sigma-hello");
         sigmaHello.classList.remove("hidden");

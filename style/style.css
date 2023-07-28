@@ -72,8 +72,7 @@ header {
   height: 45px;
   cursor: pointer;
 }
-
-.selected {
+.services-block__button.selected {
   background-color: #FFF;
   color: #37806B;
   -webkit-transition: 0.3s;
@@ -92,6 +91,15 @@ header {
   border: none;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
           box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
+  height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: none;
+}
+
+.services-element.visible {
+  height: 150px;
+  display: block;
 }
 
 .loading-animation {
