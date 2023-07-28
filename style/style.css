@@ -246,7 +246,8 @@ header {
       justify-content: space-around;
   background-image: url("../images/Modern Interior/modern_inerior_decoration.svg");
   background-repeat: no-repeat;
-  background-position: 100% 0%;
+  background-position: 0% 100%;
+  padding-bottom: 10vh;
 }
 .modern-interior-block__left-text {
   padding-top: 50px;
@@ -263,6 +264,7 @@ h1 {
   font-size: 72px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  margin-top: 20px;
 }
 
 body {
