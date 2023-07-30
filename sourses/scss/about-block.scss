@@ -1,0 +1,75 @@
+@import "variables";
+@import "mixins";
+
+.completed-work-block{
+    background-color: $base-backgroung-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        text-align: center;
+    }
+}
+
+.testimonials-block{
+    @include base-block-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20vh;
+    h2{
+        text-align: center;
+        margin-top: 0;
+    }
+    h3{
+        text-align: center;
+    }
+    &__nav-buttons{
+        align-self: flex-end;
+        margin-right: 6vw;
+        margin-bottom: 5vh;
+        button{
+            border-radius: 50%;
+            margin-right: 2.5vw;
+            padding: 15px;
+            background-color: $white-color;
+            box-shadow: $common-shadow;
+            transition: $base-transition-time;
+            &:hover{
+                background-color: $main-green-color;
+            }
+        }
+    }
+    &__comments-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .comment{
+        @include medium-rounded-border;
+        box-shadow: $common-shadow;
+        position: relative;
+        width: 400px;
+        padding: 20px 0 20px 50px;
+        img{
+            position: absolute;
+        }
+        &__image{
+            @include small-rounded-border;
+            width: 90px;
+            height: 90px;
+            left: -45px;
+            top: calc(50% - 45px);
+        }
+        &__quotes{
+            right: 10%;
+        }
+        p{
+            color: $light-grey-color;
+            font-size: 0.8em;
+            b{
+                color: $main-black-color;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

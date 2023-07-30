@@ -3,6 +3,13 @@
 
 .subscribe-block{
     @include base-block-padding;
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: $light-grey-color;
+    }
 }
 
 .subscribe-form{
@@ -14,14 +21,22 @@
         background: #EEE;
         color: $light-grey-color;        
         transition: $base-transition-time;
+        padding: 10px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        width: 20vw;
     }
     &__big-input{
         @include small-rounded-border;
         background: #EEE;
         color: $light-grey-color;
-    }
+        width: calc(40vw + 80px);
+        margin-left: -50px;
+        padding: 10px;
+   }
     &__submit-input{
         @include common-button;
+        cursor: pointer;
     }
 }
 
@@ -38,6 +53,18 @@
 
 .sigma-hello{
     @include all-window-cover;
+    &__congratulation{
+        font-size: 100px;
+        color: $main-green-color;
+        b{
+            font-size: 130px;
+            color: $light-grey-color;
+        }
+        span{
+            font-size: 150px;
+            color: #fa5454;
+        }
+    }
 }
 
 .hidden{

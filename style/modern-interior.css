@@ -2,11 +2,8 @@
   padding-left: 10vw;
   padding-right: 5vw;
   margin-top: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-image: url("../images/Modern Interior/modern_inerior_decoration.svg");
   background-repeat: no-repeat;
   background-position: 0% 100%;

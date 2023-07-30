@@ -3,18 +3,18 @@
   padding-right: 5vw;
   margin-top: 15vh;
 }
+.subscribe-block h2 {
+  text-align: center;
+}
+.subscribe-block p {
+  text-align: center;
+  color: #646464;
+}
 
 .subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe-form__small-input {
   border-top-left-radius: 20px;
@@ -22,8 +22,11 @@
   border: none;
   background: #EEE;
   color: #646464;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 10px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  width: 20vw;
 }
 .subscribe-form__big-input {
   border-top-left-radius: 20px;
@@ -31,6 +34,9 @@
   border: none;
   background: #EEE;
   color: #646464;
+  width: calc(40vw + 80px);
+  margin-left: -50px;
+  padding: 10px;
 }
 .subscribe-form__submit-input {
   border-top-left-radius: 20px;
@@ -39,6 +45,7 @@
   background: #37806B;
   color: #FFF;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 .error-input {
@@ -59,7 +66,19 @@
   right: 0;
   bottom: 0;
   background: #FFF;
-  z-index: 1;
+  z-index: 2;
+}
+.sigma-hello__congratulation {
+  font-size: 100px;
+  color: #37806B;
+}
+.sigma-hello__congratulation b {
+  font-size: 130px;
+  color: #646464;
+}
+.sigma-hello__congratulation span {
+  font-size: 150px;
+  color: #fa5454;
 }
 
 .hidden {

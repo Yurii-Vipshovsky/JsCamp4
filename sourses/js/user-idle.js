@@ -4,6 +4,7 @@ let timeoutId = setTimeout(showPopup, timeThreshold);
 
 function showPopup() {
     //add timer
+    setTimeout(()=>{window.close()},timeThreshold);
     if (confirm("You stil there?")) {
         clearTimeout(timeoutId);
         timeoutId = setTimeout(showPopup, timeThreshold);

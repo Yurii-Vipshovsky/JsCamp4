@@ -1,0 +1,50 @@
+footer {
+  background-color: #f8f8f8;
+  margin-top: 10vh;
+  padding-top: 10vh;
+  background-image: url("../images/Modern Interior/modern_inerior_decoration.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5vh;
+}
+.footer-container__link-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.footer-container__link-container a {
+  cursor: pointer;
+  color: #646464;
+}
+.footer-container__link-section {
+  display: flex;
+}
+.footer-container__social-image {
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #646464;
+  transition: 0.3s;
+}
+.footer-container__social-image:hover {
+  background-color: #37806B;
+}
+.footer-container p {
+  color: #646464;
+}
+
+.footer-bottom-block {
+  border-top: 1px solid gray;
+}
+.footer-bottom-block__text {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: #646464;
+}
+.footer-bottom-block__text a {
+  color: #37806B;
+}/*# sourceMappingURL=footer.css.map */
