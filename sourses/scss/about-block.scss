@@ -1,6 +1,38 @@
 @import "variables";
 @import "mixins";
 
+.about-block__mextreo{
+    @include base-block-padding;
+    display: flex;
+    margin-bottom: 15vh;
+}
+
+.mextreo__text-block{
+    margin-left: 5vw;
+    padding-right: 10vw;
+    h2{
+        margin-top: 50px;
+        margin-bottom: 10px
+    }
+    p{
+        color: $light-grey-color;
+        margin-bottom: 50px;
+    }    
+}
+
+.about-block__successful_working{
+    @include base-block-padding;
+    display: flex;
+    margin-bottom: 15vh;
+}
+
+.successful_working__left-side{
+    padding: 5vw;
+    h2{
+        max-width: 500px;
+    }
+}
+
 .completed-work-block{
     background-color: $base-backgroung-color;
     display: flex;
@@ -8,6 +40,49 @@
     flex-direction: column;
     h2{
         text-align: center;
+    }
+    &__container{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        height: 450px;
+    }
+    &__element{
+        @include medium-rounded-border;
+        background: #fff;
+        box-shadow: $common-shadow;
+        width: 200px;
+        height: 200px;
+        p{
+            color: $light-grey-color;
+            text-align: center;
+        }
+        &:nth-child(4){
+            position: relative;
+            top: 150px;
+        }
+        &:nth-child(10){
+            position: relative;
+            top: 150px;
+        }
+    }
+    &__step-up-line{
+        position: absolute;
+        border-bottom: 1px solid $light-grey-color;
+        border-right: 1px solid $light-grey-color;
+        height: 150px;
+        top: 100px;
+    }
+    &__step-down-line{
+        position: absolute;            
+        border-top: 1px solid $light-grey-color;
+        border-right: 1px solid $light-grey-color;
+        height: 150px;
+        top: 100px;
+    }
+    &__vertical-line{
+        position: absolute;
+        border-bottom: 1px solid $light-grey-color;
     }
 }
 

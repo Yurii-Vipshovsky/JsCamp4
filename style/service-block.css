@@ -21,6 +21,7 @@
 .services-block__button.selected {
   background-color: #FFF;
   color: #37806B;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -61,9 +62,11 @@
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
   border: none;
-  box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
+          box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
   height: 0;
   width: 20vw;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   display: none;
   background-color: #FFF;
@@ -86,5 +89,7 @@
 
 .services-element.visible {
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }/*# sourceMappingURL=service-block.css.map */
