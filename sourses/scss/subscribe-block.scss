@@ -2,13 +2,23 @@
 @import "variables";
 
 .subscribe-block{
+    background-image: url("../images/About/about_decoration_2.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    padding-top: 15vh;
     @include base-block-padding;
+    margin-top: 0;
     h2{
         text-align: center;
     }
     p{
         text-align: center;
         color: $light-grey-color;
+    }
+    &__vertical-line{
+        width: 20vw;
+        border: 1px solid $light-grey-color;
+        margin: auto;
     }
 }
 

@@ -8,14 +8,21 @@ function formValidation(event){
     const surname = document.getElementById("surname");
     const email = document.getElementById("email");
     const letters = /^[A-Za-z]+$/;
+    const bigLetters = /^[A-Z]+$/;
     let findEror = false;
     let errorText = "";
+    if(!firstname.value[0].match(bigLetters)){
+        errorText+="Invalid data in first name! First letter must be Capitalize!<br/>";
+    }
     if(!firstname.value.match(letters))
     {
         errorText+="Invalid data in first name! Can be only Letters!<br/>";
         firstname.classList.add("error-input");
         setTimeout(()=>{firstname.classList.remove("error-input");}, 5000);
         findEror = true;
+    }
+    if(!surname.value[0].match(bigLetters)){
+        errorText+="Invalid data in surname! First letter must be Capitalize!<br/>";
     }
     if(!surname.value.match(letters))
     {

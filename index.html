@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>DECBASE</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +12,13 @@
     <body class="overflow-hidden">
         <div class="sigma-hello hidden">
             <p class="sigma-hello__congratulation"></p>
-            <img/>
         </div>
         <div class="loading-animation">
             <p>Hello!!!</p>
             <div class="loading-animation__circle"></div>
             <div class="loading-animation__square"></div>
             <div class="loading-animation__rectangle"></div>
-            <img src=""/>
+            <img class="loading-animation__star" src="images/loading-star.png" alt="Star"/>
         </div>
         <script src="sourses/js/loading-animation.js"></script>
         <header>
@@ -49,7 +49,7 @@
                 <button class="modern-interior-block__contact-button">CONTACT</button>
             </div>
             <div class="image-with-bechind-border">
-                <img src="images/Modern Interior/modern_interior.png" alt="Modern Interior Image"/>
+                <img src="images/Modern_Interior/modern_interior.png" alt="Modern Interior Image"/>
             </div>
         </div>
         <div class="services-block">
@@ -131,7 +131,7 @@
             </div>
             <div class="about-block__successful_working">
                 <div class="successful_working__left-side">
-                    <img src="images/About/wooden_20.png" alt="20"/>
+                    <p class="successful_working__years">20</p>
                     <h2>Years Of Successful
                         Working
                         The Market</h2>
@@ -178,43 +178,43 @@
                 </div>
                 <div class="testimonials-block__comments-container show-comment" id="comment-page-1">
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_1.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_1.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Louise Saville1</b> /CEO of Google inc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_2.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_2.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Rekha Varadwaz1</b> /Manager at Nike inc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_1.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_1.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Louise Saville2</b> /CEO of Google inc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_2.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_2.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Rekha Varadwaz2</b>/Manager at Nike inc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_1.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_1.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Louise Saville3</b> /CEO of Google inc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="comment">
-                        <img class="comment__image" src="images/About/Testimonials/percon_2.png"/>
-                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg"/>
+                        <img class="comment__image" src="images/About/Testimonials/percon_2.png" alt="Person"/>
+                        <img class="comment__quotes" src="images/About/Testimonials/quotes.svg" alt='"'/>
                         <p><b>Rekha Varadwaz3</b> /Manager at Nike incc</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -251,6 +251,7 @@
         <div class="subscribe-block">
             <div>
                 <h2>DON'T FORGET TO SIGN UP</h2>
+                <div class="subscribe-block__vertical-line"></div>
                 <p>Find out early about all upcoming promotions and new product releases with
                     our newsletter.</p>
             </div>
@@ -296,15 +297,16 @@
                         <a>Street Front USA</a>
                         <a>brandoxide@gmail.com</a>
                         <a>002-568423591</a>
-                    </div>
+                    </div>                    
+                    <div id="weather"></div>
                 </div>
                 <div>
-                    <h4>Follow Us</h4>
-                    <div>
-                        <img class="footer-container__social-image" src="images/Footer/facebook.svg" alt="Facebook"/>
-                        <img class="footer-container__social-image" src="images/Footer/twitter.svg" alt="X"/>
-                        <img class="footer-container__social-image" src="images/Footer/instagram.svg" alt="Instagram"/>
-                        <img class="footer-container__social-image" src="images/Footer/linked_in.svg" alt="Linked In"/>
+                    <h4 class="footer-container__social-text">Follow Us</h4>
+                    <div class="footer-container__social-in-row">
+                        <a class="footer-container__social-image-container" href="https://www.facebook.com/"><img class="footer-container__social-image" src="images/Footer/facebook.svg" alt="Facebook"/></a>                        
+                        <a class="footer-container__social-image-container" href="https://twitter.com/?lang=uk"><img class="footer-container__social-image" src="images/Footer/twitter.svg" alt="X"/></a>
+                        <a class="footer-container__social-image-container" href="https://www.instagram.com/"><img class="footer-container__social-image" src="images/Footer/instagram.svg" alt="Instagram"/></a>
+                        <a class="footer-container__social-image-container" href="https://www.linkedin.com/"><img class="footer-container__social-image" src="images/Footer/linked_in.svg" alt="Linked In"/></a>
                     </div>
                 </div>
             </div>
@@ -312,13 +314,14 @@
                 <p class="footer-bottom-block__text"></p>
             </div>
         </footer>
-    </body>
-    <script src="sourses/js/user-idle.js"></script>
-    <script src="sourses/js/navigation-bar.js"></script>
-    <script src="sourses/js/services-logic.js"></script>
-    <script src="sourses/js/footer-text.js"></script>
-    <script src="sourses/js/subscribe-form-validation.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="sourses/js/comment-changer.js"></script>
-    <script src="sourses/js/complete-work.js"></script>
+        <script src="sourses/js/user-idle.js"></script>
+        <script src="sourses/js/navigation-bar.js"></script>
+        <script src="sourses/js/services-logic.js"></script>
+        <script src="sourses/js/footer-block.js"></script>
+        <script src="sourses/js/subscribe-form-validation.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="sourses/js/comment-changer.js"></script>
+        <script src="sourses/js/complete-work.js"></script>
+        <script src="sourses/js/blog-logick.js"></script>
+    </body>    
 </html>

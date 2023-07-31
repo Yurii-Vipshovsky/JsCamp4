@@ -6,20 +6,17 @@ $(document).ready(function() {
             
     function showSlide(index) {
         const slideWidth = 2 * $slides.outerWidth(true);
-        console.log('showSlide');
         $carousel.stop().animate({
             marginLeft: -(index * slideWidth)
         }, 500);
     }
             
     function nextSlide() {
-        console.log('nextSlide');
             currentIndex = (currentIndex + 1) % totalSlides;
             showSlide(currentIndex);
     }
             
     function prevSlide() {
-        console.log('prevSlide');
         currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
         showSlide(currentIndex);
     }

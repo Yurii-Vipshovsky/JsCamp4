@@ -22,32 +22,12 @@ function scrollToSection(event) {
     const sectionClassName = '.'+this.id.split('-')[0]+'-block';  
     const section = document.querySelector(sectionClassName);
     const offsetTop = section.offsetTop-headerHeight;
-
-    const scrollStepsCount = 100; 
-    const scrollStep = Math.abs(offsetTop - document.body.scrollTop)/100;
-
-    const sleep = ms => new Promise(r => setTimeout(r, ms));
-
-    //think about ease
-    async function scrollAnimation() {
-        let currPos = document.body.scrollTop;
-        for (let count = 0; count < scrollStepsCount; count++) {
-            console.log('animation');
-            if(offsetTop - document.body.scrollTop>0){
-                currPos = currPos + scrollStep;
-            }
-            else{
-                currPos = currPos - scrollStep;
-            }
-            console.log(currPos);
-            await sleep(10);
-            window.scrollTo({
-                top: currPos,
-                behavior: "smooth"
-            })
-        }
-    }
-    scrollAnimation();
-      
+    
+    window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+    })
+        
+    scrollAnimation();      
 }
 //#endregion

@@ -1,3 +1,6 @@
+const MAX_COUNT = 5;
+//can be changed any time
+//const MAX_COUNT = 3; // Due to requirements ==3?
 let showCount = 0;
 let interiorServises;
 let architectureServises;
@@ -9,7 +12,6 @@ async function getData(){
     interiorServises = allServises.filter((x) => { return x.type == "Interior Design"; });
     architectureServises = allServises.filter((x) => { return x.type == "Architecture"; });
     planingServises = allServises.filter((x) => { return x.type == "Planning"; });
-    console.log(planingServises);
     createAll();
 }
 
@@ -40,7 +42,7 @@ function chargeService(event){
 }
 
 function createElement(elemData){
-    if(showCount==5){
+    if(showCount==MAX_COUNT){//in requirements MAX_COUNT=3
         return;
     }
     const element = document.querySelectorAll(".services-element")[showCount];

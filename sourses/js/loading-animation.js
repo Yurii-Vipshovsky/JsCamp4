@@ -4,5 +4,5 @@ window.onload = function () {
         const animationElement = document.querySelector(".loading-animation");
         animationElement.remove();
         body.classList.remove("overflow-hidden");
-    }, 500);
+    }, 5000);
 }

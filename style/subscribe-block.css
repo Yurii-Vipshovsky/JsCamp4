@@ -1,7 +1,12 @@
 .subscribe-block {
+  background-image: url("../images/About/about_decoration_2.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  padding-top: 15vh;
   padding-left: 10vw;
   padding-right: 5vw;
   margin-top: 15vh;
+  margin-top: 0;
 }
 .subscribe-block h2 {
   text-align: center;
@@ -9,6 +14,11 @@
 .subscribe-block p {
   text-align: center;
   color: #646464;
+}
+.subscribe-block__vertical-line {
+  width: 20vw;
+  border: 1px solid #646464;
+  margin: auto;
 }
 
 .subscribe-form {
@@ -74,7 +84,7 @@
   right: 0;
   bottom: 0;
   background: #FFF;
-  z-index: 2;
+  z-index: 3;
 }
 .sigma-hello__congratulation {
   font-size: 100px;

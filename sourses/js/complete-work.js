@@ -22,6 +22,6 @@ function createConection(){
     stepUpLine.style.left = (elements[1].offsetLeft + elemWidth) + 'px';
 }
 
-setTimeout(createConection,605);//wait for loading animation done
+setTimeout(createConection,5005);//wait for loading animation done
 
 window.addEventListener('resize', createConection, true);

@@ -1,3 +1,8 @@
+.about-block {
+  background-image: url("../images/About/about_decoration_1.svg"), url("../images/About/about_decoration_2.svg"), url("../images/About/about_decoration_3.svg");
+  background-repeat: no-repeat;
+  background-position: 8% 25%, 100% 40%, 0% 85%;
+}
 .about-block__mextreo {
   padding-left: 10vw;
   padding-right: 5vw;
@@ -10,6 +15,15 @@
 .about-block__mextreo .image-with-bechind-border::after {
   top: -50px;
   right: 50px;
+}
+.about-block__successful_working {
+  padding-left: 10vw;
+  padding-right: 5vw;
+  margin-top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15vh;
 }
 
 .mextreo__text-block {
@@ -25,21 +39,22 @@
   margin-bottom: 50px;
 }
 
-.about-block__successful_working {
-  padding-left: 10vw;
-  padding-right: 5vw;
-  margin-top: 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 15vh;
-}
-
 .successful_working__left-side {
   padding: 5vw;
 }
 .successful_working__left-side h2 {
   max-width: 500px;
+}
+.successful_working__years {
+  margin-bottom: -2rem;
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 200px;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-size: contain;
+  background-image: url("../images/About/20-texture.jpg");
 }
 
 .completed-work-block {

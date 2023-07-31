@@ -12,6 +12,9 @@ footer{
     display: flex;
     justify-content: space-around;
     padding-bottom: 5vh;
+    &__social-text{
+        text-align: center;
+    }
     &__link-container{
         display: flex;
         flex-direction: column;
@@ -23,12 +26,25 @@ footer{
     }
     &__link-section{
         display: flex;
+        #weather{
+            margin: auto;
+            text-align: center;
+        }
     }
-    &__social-image{
-        border-radius: 50%;
+    &__social-in-row{
+        display: flex;
+    }
+    &__social-image-container{
         cursor: pointer;
-        background-color: $light-grey-color;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        background-color: $light-grey-color;        
         transition: $base-transition-time;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover{
             background-color: $main-green-color;
         }

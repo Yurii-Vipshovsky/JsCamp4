@@ -29,16 +29,14 @@
         left:calc(50% - 100px);
     }
     50%{
-        font-size: 160px;
-        top:0%;
-        left:0%;
+        transform: translate(0px, 100%);
+        transform: rotate(120deg);
         width: 350px;
         height: 250px;
     }
     100%{
-        font-size: 100px;
-        top:100%;
-        right:0%;
+        transform: rotate(360deg);
+        transform: translate(100%, 100%);
         width: 250px;
         height: 350px;
     }
@@ -47,23 +45,44 @@
 @keyframes rectangle-animation 
 {
     0%{
-        transform: rotate(0deg);
         top:calc(50% - 40px);
         left:calc(50% - 100px);
     }
     50%{
+        transform: translate(0px, 0px);
         transform: rotate(120deg);
-        top:0%;
-        left:0%;
         width: 350px;
         height: 250px;
     }
     100%{
         transform: rotate(360deg);
-        top:100%;
-        right:0%;
+        transform: translate(100%, 0%);
         width: 250px;
         height: 350px;
+    }
+};
+
+@keyframes circle-animation 
+{
+    0%{
+        top:300px;
+        left:500px;
+    }
+    50%{
+        transform: translate(800px, 700px);
+    }
+    100%{
+        transform: translate(200px, 300px);
+    }
+};
+
+@keyframes star-animation 
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 };
 
@@ -74,7 +93,7 @@
         position: fixed;
         top:calc(50% - 40px);
         left:calc(50% - 100px);
-        animation: text-animation linear 5s;
+        animation: text-animation linear 5.1s;
     }
     &__circle{
         position: fixed;
@@ -82,20 +101,23 @@
         background-color: $main-green-color;
         width: 250px;
         height: 250px;
-        //animation: text-animation linear 5s;
+        animation: circle-animation linear 5.1s;
     }
     &__square{
         position: fixed;
         width: 250px;
         height: 250px;
         background-color: $light-broun-color;
-        animation: square-animation linear 5s;
+        animation: square-animation linear 5.1s;
     }
     &__rectangle{
         position: fixed;
         width: 500px;
         height: 250px;
         background-color: $light-grey-color;
-        animation: rectangle-animation linear 5s;
+        animation: rectangle-animation linear 5.1s;
+    }
+    &__star{
+        animation: star-animation linear 5.1s;
     }
 }
