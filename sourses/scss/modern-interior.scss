@@ -16,6 +16,7 @@
         margin-top: 50px;
     }
     p{
+        width: 500px;
         color: $light-grey-color;
     }
 }
@@ -26,4 +27,8 @@ h1{
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
+}
+
+.image-with-bechind-border{
+    @include big-picture-with-border;
 }

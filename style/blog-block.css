@@ -33,4 +33,17 @@
 .blog-element__description {
   color: #646464;
   margin-bottom: 40px;
+}
+.blog-element .image-with-bechind-border img {
+  position: relative;
+  z-index: 1;
+  width: 550px;
+  height: 400px;
+}
+.blog-element .image-with-bechind-border::after {
+  width: 550px;
+  height: 400px;
+  z-index: 0;
+  top: 25px;
+  right: 190px;
 }/*# sourceMappingURL=blog-block.css.map */

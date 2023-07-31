@@ -140,8 +140,8 @@
   position: fixed;
   top: calc(50% - 40px);
   left: calc(50% - 100px);
-  -webkit-transition: 5s text-animation;
-  transition: 5s text-animation;
+  -webkit-animation: text-animation linear 5s;
+          animation: text-animation linear 5s;
 }
 .loading-animation__circle {
   position: fixed;
@@ -155,10 +155,14 @@
   width: 250px;
   height: 250px;
   background-color: #CAA892;
+  -webkit-animation: square-animation linear 5s;
+          animation: square-animation linear 5s;
 }
 .loading-animation__rectangle {
   position: fixed;
   width: 500px;
   height: 250px;
   background-color: #646464;
+  -webkit-animation: rectangle-animation linear 5s;
+          animation: rectangle-animation linear 5s;
 }/*# sourceMappingURL=loading-animation.css.map */

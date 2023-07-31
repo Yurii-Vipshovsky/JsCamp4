@@ -12,6 +12,32 @@
     border: none;
 }
 
+@mixin big-rounded-border{
+    border-top-left-radius : 80px;
+    border-bottom-right-radius : 80px;
+    border: none;
+}
+
+@mixin big-picture-with-border{
+    position: relative;
+    img{
+        @include big-rounded-border;
+        height: 600px;
+        width: 700px;
+    }
+    &::after{
+        @include big-rounded-border;
+        z-index: -1;
+        content: '';
+        top: 50px;
+        right: -50px;
+        width: 700px;
+        height: 600px;
+        position: absolute;
+        border: 2px solid $light-broun-color;
+    }
+}
+
 @mixin small-rounded-bordered-button{
     border-radius : 20px;
     border: 3px solid $main-green-color;

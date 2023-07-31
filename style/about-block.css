@@ -7,6 +7,10 @@
   display: flex;
   margin-bottom: 15vh;
 }
+.about-block__mextreo .image-with-bechind-border::after {
+  top: -50px;
+  right: 50px;
+}
 
 .mextreo__text-block {
   margin-left: 5vw;
@@ -136,24 +140,28 @@
 }
 .testimonials-block__nav-buttons button {
   border-radius: 50%;
-  margin-right: 2.5vw;
-  padding: 15px;
+  margin-right: 3vw;
+  width: 50px;
+  height: 50px;
   background-color: #FFF;
+  color: #646464;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
           box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .testimonials-block__nav-buttons button:hover {
+  color: #FFF;
   background-color: #37806B;
 }
 .testimonials-block__comments-container {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 .testimonials-block .comment {
   border-top-left-radius: 40px;
@@ -162,8 +170,10 @@
   -webkit-box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
           box-shadow: 5px 5px 10px 0px rgba(33, 33, 33, 0.4509803922);
   position: relative;
-  width: 400px;
-  padding: 20px 0 20px 50px;
+  width: 25vw;
+  height: 15vh;
+  margin-right: 17vw;
+  padding: 35px 0 20px 80px;
 }
 .testimonials-block .comment img {
   position: absolute;
@@ -172,10 +182,10 @@
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: none;
-  width: 90px;
-  height: 90px;
-  left: -45px;
-  top: calc(50% - 45px);
+  width: 110px;
+  height: 110px;
+  left: -55px;
+  top: calc(50% - 55px);
 }
 .testimonials-block .comment__quotes {
   right: 10%;
@@ -183,6 +193,7 @@
 .testimonials-block .comment p {
   color: #646464;
   font-size: 0.8em;
+  margin-right: 50px;
 }
 .testimonials-block .comment p b {
   color: #212121;

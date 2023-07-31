@@ -74,7 +74,7 @@
         position: fixed;
         top:calc(50% - 40px);
         left:calc(50% - 100px);
-        transition: 5s text-animation;
+        animation: text-animation linear 5s;
     }
     &__circle{
         position: fixed;
@@ -82,17 +82,20 @@
         background-color: $main-green-color;
         width: 250px;
         height: 250px;
+        //animation: text-animation linear 5s;
     }
     &__square{
         position: fixed;
         width: 250px;
         height: 250px;
         background-color: $light-broun-color;
+        animation: square-animation linear 5s;
     }
     &__rectangle{
         position: fixed;
         width: 500px;
         height: 250px;
         background-color: $light-grey-color;
+        animation: rectangle-animation linear 5s;
     }
 }

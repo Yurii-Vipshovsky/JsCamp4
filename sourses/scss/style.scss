@@ -31,19 +31,5 @@ button{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-}
-
-.image-with-bechind-border{
-    &__image{
-        @include medium-rounded-border;
-    }
-    &__bechind-image{
-        @include medium-rounded-border;
-        border: 3px solid $light-broun-color;
-        position: relative;
-        top: -450px;
-        left: 50px;
-        height: 500px;
-
-    }
+    cursor: pointer;
 }

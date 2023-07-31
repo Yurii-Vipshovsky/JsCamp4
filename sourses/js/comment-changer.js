@@ -1,54 +1,31 @@
-let curentPage = 1;
-const pageCount = 3;
-
-const nextButton = document.querySelector('#testimonials-block__next-button');
-const prevButton = document.querySelector('#testimonials-block__prev-button');
-nextButton.addEventListener("click", nextPage);
-prevButton.addEventListener("click", prevPage);
-
-function nextPage(){
-    document.querySelector('.disapear-right .disapear-left').remove('.disapear-right .disapear-left');
-    if(curentPage==pageCount){
-        curentPage=1;
+$(document).ready(function() {
+    const $carousel = $('.testimonials-block__comments-container');
+    const $slides = $carousel.children('.comment');
+    const totalSlides = 3;    
+    let currentIndex = 0;
+            
+    function showSlide(index) {
+        const slideWidth = 2 * $slides.outerWidth(true);
+        console.log('showSlide');
+        $carousel.stop().animate({
+            marginLeft: -(index * slideWidth)
+        }, 500);
     }
-    else{
-        curentPage++;
+            
+    function nextSlide() {
+        console.log('nextSlide');
+            currentIndex = (currentIndex + 1) % totalSlides;
+            showSlide(currentIndex);
     }
-    changePage(curentPage, true);
-}
-
-function prevPage(){
-    if(curentPage==1){
-        curentPage=pageCount;
+            
+    function prevSlide() {
+        console.log('prevSlide');
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        showSlide(currentIndex);
     }
-    else{
-        curentPage--;
-    }
-    changePage(curentPage, false);
-}
-
-//boolean direction 
-//if next page => true - direction from left to right
-function changePage(pageNumber, direction){
-    let idName = "#comment-page-"+pageNumber;
-    let curentPageElem = document.querySelector(idName);
-    if(direction){
-        curentPageElem.classList.add("disapear-right");
-
-    }
-    else{
-        curentPageElem.classList.add("disapear-left");
-    }
-}
-
-let currPos = document.body.scrollTop;
-        for (let count = 0; count < scrollStepsCount; count++) {
-            console.log('animation');
-            if(offsetTop - document.body.scrollTop>0){
-                currPos = currPos + scrollStep;
-            }
-            else{
-                currPos = currPos - scrollStep;
-            }
-            console.log(currPos);
-            await sleep(10);
+            
+    $('#testimonials-block__next-button').on('click', nextSlide);
+    $('#testimonials-block__prev-button').on('click', prevSlide);
+            
+    showSlide(currentIndex);
+});

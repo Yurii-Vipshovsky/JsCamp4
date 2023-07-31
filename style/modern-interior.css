@@ -19,6 +19,7 @@
   margin-top: 50px;
 }
 .modern-interior-block p {
+  width: 500px;
   color: #646464;
 }
 
@@ -28,4 +29,28 @@ h1 {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
+}
+
+.image-with-bechind-border {
+  position: relative;
+}
+.image-with-bechind-border img {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border: none;
+  height: 600px;
+  width: 700px;
+}
+.image-with-bechind-border::after {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border: none;
+  z-index: -1;
+  content: "";
+  top: 50px;
+  right: -50px;
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  border: 2px solid #CAA892;
 }/*# sourceMappingURL=modern-interior.css.map */
