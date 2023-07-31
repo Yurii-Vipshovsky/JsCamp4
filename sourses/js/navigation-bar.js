@@ -19,7 +19,14 @@ navButtons.forEach(button => {
 const headerHeight = 100;
 function scrollToSection(event) {
     event.preventDefault();
-    const sectionClassName = '.'+this.id.split('-')[0]+'-block';  
+    let sectionClassName = '.'+this.id.split('-')[0]+'-block';  
+    if(sectionClassName=='.progect-block'){
+        sectionClassName = '.modern-interior-block';
+    }
+    if(sectionClassName=='.contact-block'){
+        sectionClassName = '.footer-block';
+    }
+    console.log(sectionClassName);
     const section = document.querySelector(sectionClassName);
     const offsetTop = section.offsetTop-headerHeight;
     
