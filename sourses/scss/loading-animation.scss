@@ -1,123 +1,91 @@
 @import "mixins";
 @import "variables";
 
-@keyframes text-animation 
-{
-    0%{
-        transform: translate(calc(50% - 40px), calc(50% - 100px));
-        font-size: 80px;
-        top:calc(50% - 40px);
-        left:calc(50% - 100px);
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
     }
-    50%{
-        color: red;
-        font-size: 160px;
-        top:0%;
-        left:0%;
+    100% {
+        opacity: 1;
     }
-    100%{
-        font-size: 100px;
-        top:100%;
-        right:0%;
-    }
-};
+}
 
-@keyframes square-animation 
-{
-    0%{
-        top:calc(50% - 40px);
-        left:calc(50% - 100px);
+@keyframes moveCircle {
+    0% {
+        transform: translateY(0);
     }
-    50%{
-        transform: translate(0px, 100%);
-        transform: rotate(120deg);
-        width: 350px;
-        height: 250px;
+    100% {
+        transform: translateY(-50px);
     }
-    100%{
-        transform: rotate(360deg);
-        transform: translate(100%, 100%);
-        width: 250px;
-        height: 350px;
-    }
-};
-
-@keyframes rectangle-animation 
-{
-    0%{
-        top:calc(50% - 40px);
-        left:calc(50% - 100px);
-    }
-    50%{
-        transform: translate(0px, 0px);
-        transform: rotate(120deg);
-        width: 350px;
-        height: 250px;
-    }
-    100%{
-        transform: rotate(360deg);
-        transform: translate(100%, 0%);
-        width: 250px;
-        height: 350px;
-    }
-};
-
-@keyframes circle-animation 
-{
-    0%{
-        top:300px;
-        left:500px;
-    }
-    50%{
-        transform: translate(800px, 700px);
-    }
-    100%{
-        transform: translate(200px, 300px);
-    }
-};
-
-@keyframes star-animation 
-{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-};
+}
 
 .loading-animation{
     @include all-window-cover;
-    p{
-        font-size: 80px;
-        position: fixed;
-        top:calc(50% - 40px);
-        left:calc(50% - 100px);
-        animation: text-animation linear 5.1s;
+    &__container{
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+        position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
     &__circle{
-        position: fixed;
-        border-radius: 50%;
+        width: 50px;
+        height: 50px;
         background-color: $main-green-color;
-        width: 250px;
-        height: 250px;
-        animation: circle-animation linear 5.1s;
+        border-radius: 50%;
+        position: absolute;
+        animation: moveCircle 1s linear infinite alternate;
     }
-    &__square{
-        position: fixed;
-        width: 250px;
-        height: 250px;
-        background-color: $light-broun-color;
-        animation: square-animation linear 5.1s;
+    
+    &__circle:nth-child(1) {
+        left: 20px;
+        animation-delay: 0.2s;
     }
-    &__rectangle{
-        position: fixed;
-        width: 500px;
-        height: 250px;
-        background-color: $light-grey-color;
-        animation: rectangle-animation linear 5.1s;
+
+    &__circle:nth-child(2) {
+        left: 80px;
+        animation-delay: 0.4s;
     }
-    &__star{
-        animation: star-animation linear 5.1s;
+
+    &__circle:nth-child(3) {
+        left: 140px;
+        animation-delay: 0.6s;
+    }
+
+    &__circle:nth-child(4) {
+        left: 200px;
+        animation-delay: 0.8s;
+    }
+
+    &__circle:nth-child(5) {
+        left: 260px;
+        animation-delay: 1s;
+    }
+    &__circle:nth-child(6) {
+        right: 20px;
+        animation-delay: 1s;
+    }
+
+    &__circle:nth-child(7) {
+        right: 80px;
+        animation-delay: 0.8s;
+    }
+
+    &__circle:nth-child(8) {
+        right: 140px;
+        animation-delay: 0.6s;
+    }
+
+    &__circle:nth-child(9) {
+        right: 200px;
+        animation-delay: 0.4s;
+    }
+
+    &__circle:nth-child(10) {
+        right: 260px;
+        animation-delay: 0.2s;
     }
 }
